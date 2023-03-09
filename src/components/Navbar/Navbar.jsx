@@ -21,7 +21,7 @@ const Navbar = () => {
                 <NavLink className="font-medium hover:underline underline-offset-4 transition-all ease-in-out">Contacto</NavLink>
             </nav>
 
-            {isOpen ? <RxCross2 className='text-4xl' onClick={() => setIsOpen(false)}/> : <RxHamburgerMenu className='text-4xl' onClick={() => setIsOpen(true)}/>}
+            {isOpen ? <RxCross2 className='text-4xl lg:hidden' onClick={() => setIsOpen(false)}/> : <RxHamburgerMenu className='text-4xl lg:hidden' onClick={() => setIsOpen(true)}/>}
 
             <nav className={`fixed flex w-full flex-col pt-32 top-32 lg:hidden overflow-y-auto bottom-0 gap-8 p-6 bg-black pl-4 duration-200 ${isOpen ? "left-0" : "left-[-100%]"}`}>
                 <NavLink className="font-medium">Colección</NavLink>
