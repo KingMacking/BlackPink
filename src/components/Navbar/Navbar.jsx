@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className={`bg-white flex p-6 ${scrollPosition !== 0 ? "justify-between items-center px-20 lg:px-10 sticky top-0" : "lg:flex-col gap-4 px-20 lg:px-0 justify-between lg:justify-start items-center sticky top-0"} transition-all ease-in-out w-full`}>
+        <div className={`bg-white z-50 flex p-6 ${scrollPosition !== 0 ? "justify-between items-center px-20 lg:px-10 sticky top-0" : "lg:flex-col gap-4 px-20 lg:px-0 justify-between lg:justify-start items-center sticky top-0"} transition-all ease-in-out w-full`}>
             <div className='flex flex-col gap-2'>
                 <img src={blackPinkLogo} className="w-full"/>
                 <p className='font-principal italic'>Compra mínima 10.000 pesos</p>
