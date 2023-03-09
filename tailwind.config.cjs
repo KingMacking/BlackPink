@@ -7,6 +7,9 @@ module.exports = {
             white: "#FCFCFC",
             black: "#1A1A1A"
         },
+        fontFamily: {
+            principal: ["Poppins", "sans-serif"]
+        }
     },
     plugins: [],
 };
