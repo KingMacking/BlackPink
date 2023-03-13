@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="lg:flex lg:justify-around bg-black p-20">
             <div className="text-white flex flex-col justify-center lg:justify-start">
                 <img src={logo} alt="logo"/>
-                <p className="mt-2 lg:mt-4 flex justify-center lg:justify-start">© Blackp:nk 2013</p>
+                <p className="mt-2 lg:mt-4 flex justify-center lg:justify-start">© Blackp:nk 2023</p>
             </div>
             <div className="text-white flex flex-col">
                 <h1 className="text-xl font-bold mt-5 lg:mt-0 flex justify-center lg:justify-start">Informacion</h1>
