@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Winter Coat",
+        "price": 99.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "abrigos",
+        "colors": ["#333333", "#666666", "#999999"]
+    },
+    {
+        "name": "Leather Jacket",
+        "price": 149.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "abrigos",
+        "colors": ["#663300", "#996633", "#CC9966", "#FFCC99"]
+    },
+    {
+        "name": "Puffer Coat",
+        "price": 79.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "abrigos",
+        "colors": ["#336699", "#3399CC", "#66CCFF"]
+    },
+    {
+        "name": "Trench Coat",
+        "price": 89.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "abrigos",
+        "colors": ["#333366", "#666699", "#9999CC", "#CCCCFF"]
+    },
+    {
+        "name": "Wool Jacket",
+        "price": 129.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "abrigos",
+        "colors": ["#663366", "#996699", "#CC99CC", "#FFCCFF"]
+    },
+    {
+        "name": "Bomber Jacket",
+        "price": 119.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "abrigos",
+        "colors": ["#CC6600", "#FF9933", "#FFCC99", "#FFFFCC"]
+    },
+    {
+        "name": "Parka Coat",
+        "price": 149.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "abrigos",
+        "colors": ["#336600", "#669933", "#99CC66", "#CCFF99"]
+    },
+    {
+        "name": "Denim Jacket",
+        "price": 69.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "abrigos",
+        "colors": ["#336666", "#669999", "#99CCCC", "#CCFFFF"]
+    },
+    {
+        "name": "Fleece Jacket",
+        "price": 59.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "abrigos",
+        "colors": ["#660033", "#993366", "#CC99CC", "#FFCCFF"]
+    },
+    {
+        "name": "Skirt",
+        "price": 59.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "polleras",
+        "colors": ["#660033", "#993366", "#CC99CC", "#FFCCFF"]
+    },
+    {
+        "name": "Skirt",
+        "price": 59.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "polleras",
+        "colors": ["#660033", "#993366", "#CC99CC", "#FFCCFF"]
+    },
+    {
+        "name": "Skirt",
+        "price": 59.99,
+        "priceType": "Mayorista",
+        "image": "https://imgur.com/1WQ8lxa.png",
+        "category": "polleras",
+        "colors": ["#660033", "#993366", "#CC99CC", "#FFCCFF"]
+    }
+]

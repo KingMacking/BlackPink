@@ -1,6 +1,6 @@
-const PopularCard = ({name, price, priceType, colors, image}) => {
+const ProductCard = ({name, price, priceType, colors, image}) => {
     return (
-        <article className="flex flex-col gap-4 flex-grow font-principal">
+        <div className="flex flex-col gap-4 flex-grow font-principal basis-[30%]">
             <div>
                 <img className="w-full" src={image}></img>
             </div>
@@ -15,7 +15,7 @@ const PopularCard = ({name, price, priceType, colors, image}) => {
                     })}
                 </div>
             </div>
-        </article>
+        </div>
     )
 }
-export default PopularCard
+export default ProductCard
