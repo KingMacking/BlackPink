@@ -1,5 +1,5 @@
 import popularImage from '../../../../assets/image/popular.png'
-import PopularCard from './PopularCard/PopularCard'
+import ProductCard from '../../../ProductCard/ProductCard'
 
 //Sirve de testeo, mas adelante la idea seria colocarlo en un archivo aparte en una carpeta data por ejemplo.
 const popularItems = [
@@ -33,7 +33,7 @@ const Popular = () => {
             <h3 className="text-black text-4xl font-principal font-bold mb-16">Populares</h3>
             <div className='flex gap-8 w-full flex-wrap lg:flex-nowrap'>
                 {popularItems.map((item, index) => {
-                    return <PopularCard key={index} name={item.name} image={item.image} price={item.price} priceType={item.priceType} colors={item.colors} />
+                    return <ProductCard key={index} name={item.name} image={item.image} price={item.price} priceType={item.priceType} colors={item.colors} />
                 })}
             </div>
         </section>

@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="text-white flex flex-col items-center lg:items-start">
-                <h1 className="text-xl font-bold lg:mt-0 mt-4">Corrientes 226, Córdoba Capital, Argentina</h1>
+                <a href="https://goo.gl/maps/PA61pzkBY241snXXA" target="_blank" className="text-xl font-bold lg:mt-0 mt-4 hover:underline underline-offset-2">Corrientes 226, Córdoba Capital, Argentina</a>
                 <p className="my-1 mt-4 lg:my-2 lg:mt-4">Hararios: </p>
                 <p className="my-1">Lunes a viernes de 9hs a 18hs</p>
                 <p className="my-1">Sábado de 9hs a 14hs</p>
