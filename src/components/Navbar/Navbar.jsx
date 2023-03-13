@@ -17,7 +17,7 @@ const Navbar = () => {
                 </div>
                 <nav className=' hidden lg:flex gap-16 items-center p-2'>
                     <NavLink className="font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal">Colección</NavLink>
-                    <NavLink className="font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal">Cómo comprar</NavLink>
+                    <NavLink className="font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal" to={'/howtobuy'}>Cómo comprar</NavLink>
                     <NavLink className="font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal">Sobre nosotros</NavLink>
                     <NavLink className="font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal">Contacto</NavLink>
                 </nav>
