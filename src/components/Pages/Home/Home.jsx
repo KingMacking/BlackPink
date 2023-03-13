@@ -1,14 +1,20 @@
 import useScroll from "../../../hooks/useScroll"
 import FollowUs from "../../FollowUs/FollowUs"
-import SwiperHome from "../../Swiper/Swiper"
+import MixMatch from "./MixMatch/MixMatch"
+import NewCollections from "./NewCollections/NewCollections"
+import Popular from "./Popular/Popular"
+import SwiperHome from "./Swiper/Swiper"
 
 const Home = () => {
     const scrollPosition = useScroll()
     return (
-        <div className={`h-[1500px] ${scrollPosition > 150 && "mt-32"}`}>
+        <main className={`h-auto ${scrollPosition > 150 && "mt-32"}`}>
             <SwiperHome />
+            <NewCollections />
+            <Popular />
+            <MixMatch />
             <FollowUs />
-        </div>
+        </main>
     )
 }
 export default Home
