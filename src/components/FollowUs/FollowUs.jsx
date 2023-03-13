@@ -3,7 +3,7 @@ import backgroundImage from '../../assets/image/1.png'
 
 const FollowUs = () => {
     return (
-        <div className='flex flex-col items-center gap-12'>
+        <div className='flex flex-col items-center gap-12 mb-32'>
             <h3 className='text-2xl font-bold font-principal'>Seguinos</h3>
             <a href='https://www.instagram.com/bpink.cba/' target="_blank" className='relative w-fit hover:scale-110 hover:cursor-pointer transition-all ease-in-out duration-200'>
                 <img src={backgroundImage} className='filter brightness-50'/>
