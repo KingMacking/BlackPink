@@ -2,7 +2,7 @@ import useScroll from "../../../hooks/useScroll"
 import FollowUs from "../../FollowUs/FollowUs"
 import MixMatch from "./MixMatch/MixMatch"
 import NewCollections from "./NewCollections/NewCollections"
-import Popular from "./Popular/Popular"
+import Popular from "../../Popular/Popular"
 import SwiperHome from "./Swiper/Swiper"
 
 const Home = () => {
