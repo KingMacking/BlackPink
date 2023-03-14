@@ -51,11 +51,11 @@ const Products = () => {
 
     return (
         <main className={`h-auto px-16 ${scrollPosition > 150 && "mt-32"}`}>
-            <div className="flex w-full items-center my-16 relative">
+            <div className="relative flex items-center w-full my-16">
                 <FilterBySelection setOrder={setOrder} />
-                <h2 className="font-principal text-4xl font-bold text-center absolute left-1/2 -translate-x-1/2">{category ? category.charAt(0).toUpperCase() + category.slice(1) : "Todos"}</h2>
+                <h2 className="absolute text-4xl font-bold text-center -translate-x-1/2 font-principal left-1/2">{category ? category.charAt(0).toUpperCase() + category.slice(1) : "Todos"}</h2>
             </div>
-            <div className='flex gap-8 flex-wrap mb-32'>
+            <div className='flex flex-wrap gap-8 mb-32'>
                 {!products ? <h2>Loading</h2> :
                     products.map((product, index) => {
                         return <ProductCard key={index} name={product.name} image={product.image} price={product.price} priceType={product.priceType} colors={product.colors} />

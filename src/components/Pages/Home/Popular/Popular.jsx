@@ -29,9 +29,9 @@ const popularItems = [
 
 const Popular = () => {
     return (
-        <section className='px-16 flex flex-col mb-32'>
-            <h3 className="text-black text-4xl font-principal font-bold mb-16">Populares</h3>
-            <div className='flex gap-8 w-full flex-wrap lg:flex-nowrap'>
+        <section className='flex flex-col px-16 mb-32'>
+            <h3 className="mb-16 text-4xl font-bold text-black font-principal">Populares</h3>
+            <div className='flex flex-wrap w-full gap-8 lg:flex-nowrap'>
                 {popularItems.map((item, index) => {
                     return <ProductCard key={index} name={item.name} image={item.image} price={item.price} priceType={item.priceType} colors={item.colors} />
                 })}

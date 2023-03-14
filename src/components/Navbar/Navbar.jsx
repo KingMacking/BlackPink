@@ -13,13 +13,13 @@ const Navbar = () => {
             <div className={`bg-white z-50 flex p-6 ${scrollPosition > 150 ? "justify-between items-center px-20 lg:px-16 sticky top-0" : "lg:flex-col gap-4 px-20 lg:px-0 justify-between lg:justify-start items-center"} transition-all ease-in-out w-full`}>
                 <div className='flex flex-col gap-2'>
                     <img src={blackPinkLogo} className="w-full"/>
-                    <p className='font-principal italic'>Compra mínima 10.000 pesos</p>
+                    <p className='italic font-principal'>Compra mínima 10.000 pesos</p>
                 </div>
-                <nav className=' hidden lg:flex gap-16 items-center p-2'>
-                    <NavLink className="font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal">Colección</NavLink>
-                    <NavLink className="font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal">Cómo comprar</NavLink>
-                    <NavLink className="font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal">Sobre nosotros</NavLink>
-                    <NavLink className="font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal">Contacto</NavLink>
+                <nav className='items-center hidden gap-16 p-2 lg:flex'>
+                    <NavLink className="font-bold transition-all ease-in-out hover:underline underline-offset-4 font-principal">Colección</NavLink>
+                    <NavLink className="font-bold transition-all ease-in-out hover:underline underline-offset-4 font-principal">Cómo comprar</NavLink>
+                    <NavLink className="font-bold transition-all ease-in-out hover:underline underline-offset-4 font-principal">Sobre nosotros</NavLink>
+                    <NavLink className="font-bold transition-all ease-in-out hover:underline underline-offset-4 font-principal">Contacto</NavLink>
                 </nav>
 
                 {isOpen ? <RxCross2 className='text-4xl lg:hidden' onClick={() => setIsOpen(false)}/> : <RxHamburgerMenu className='text-4xl lg:hidden' onClick={() => setIsOpen(true)}/>}
