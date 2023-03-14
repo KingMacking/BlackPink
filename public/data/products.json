@@ -6,6 +6,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "abrigos",
+        "popular": false,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#333333", "#666666", "#999999"]
     },
     {
@@ -15,6 +18,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "abrigos",
+        "popular": true,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#663300", "#996633", "#CC9966", "#FFCC99"]
     },
     {
@@ -24,6 +30,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "abrigos",
+        "popular": true,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#336699", "#3399CC", "#66CCFF"]
     },
     {
@@ -33,6 +42,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "abrigos",
+        "popular": false,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#333366", "#666699", "#9999CC", "#CCCCFF"]
     },
     {
@@ -42,6 +54,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "abrigos",
+        "popular": false,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#663366", "#996699", "#CC99CC", "#FFCCFF"]
     },
     {
@@ -51,6 +66,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "abrigos",
+        "popular": false,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#CC6600", "#FF9933", "#FFCC99", "#FFFFCC"]
     },
     {
@@ -60,6 +78,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "abrigos",
+        "popular": false,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#336600", "#669933", "#99CC66", "#CCFF99"]
     },
     {
@@ -69,6 +90,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "abrigos",
+        "popular": true,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#336666", "#669999", "#99CCCC", "#CCFFFF"]
     },
     {
@@ -78,6 +102,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "abrigos",
+        "popular": false,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#660033", "#993366", "#CC99CC", "#FFCCFF"]
     },
     {
@@ -87,6 +114,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "polleras",
+        "popular": true,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#660033", "#993366", "#CC99CC", "#FFCCFF"]
     },
     {
@@ -96,6 +126,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "polleras",
+        "popular": false,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#660033", "#993366", "#CC99CC", "#FFCCFF"]
     },
     {
@@ -105,6 +138,9 @@
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
         "category": "polleras",
+        "popular": true,
+        "sizes": ["M","L","XL"],
+        "description": "Tela de algodon",
         "colors": ["#660033", "#993366", "#CC99CC", "#FFCCFF"]
     }
 ]
