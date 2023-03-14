@@ -8,7 +8,7 @@ import SwiperHome from "./Swiper/Swiper"
 const Home = () => {
     const scrollPosition = useScroll()
     return (
-        <main className={`h-auto ${scrollPosition > 150 && "mt-32"}`}>
+        <main className={`h-auto ${scrollPosition > 0 && "mt-32"}`}>
             <SwiperHome />
             <NewCollections />
             <Popular />

@@ -1,6 +1,7 @@
 [
     {
         "name": "Winter Coat",
+        "id": 1,
         "price": 99.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -9,6 +10,7 @@
     },
     {
         "name": "Leather Jacket",
+        "id": 2,
         "price": 149.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -17,6 +19,7 @@
     },
     {
         "name": "Puffer Coat",
+        "id": 3,
         "price": 79.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -25,6 +28,7 @@
     },
     {
         "name": "Trench Coat",
+        "id": 4,
         "price": 89.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -33,6 +37,7 @@
     },
     {
         "name": "Wool Jacket",
+        "id": 5,
         "price": 129.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -41,6 +46,7 @@
     },
     {
         "name": "Bomber Jacket",
+        "id": 6,
         "price": 119.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -49,6 +55,7 @@
     },
     {
         "name": "Parka Coat",
+        "id": 7,
         "price": 149.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -57,6 +64,7 @@
     },
     {
         "name": "Denim Jacket",
+        "id": 8,
         "price": 69.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -65,6 +73,7 @@
     },
     {
         "name": "Fleece Jacket",
+        "id": 9,
         "price": 59.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -73,6 +82,7 @@
     },
     {
         "name": "Skirt",
+        "id": 10,
         "price": 59.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -81,6 +91,7 @@
     },
     {
         "name": "Skirt",
+        "id": 11,
         "price": 59.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",
@@ -89,6 +100,7 @@
     },
     {
         "name": "Skirt",
+        "id": 12,
         "price": 59.99,
         "priceType": "Mayorista",
         "image": "https://imgur.com/1WQ8lxa.png",

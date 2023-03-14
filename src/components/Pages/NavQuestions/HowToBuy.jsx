@@ -12,7 +12,7 @@ const HowToBuy = () => {
     const [active, setActive] = useState("Primero")
 
     return (
-        <div className='flex flex-col'>
+        <main className={`flex flex-col ${scrollPosition > 0 && "mt-32"}`}>
             <div>
                 <NavBuy setActive={setActive}/>
             </div>
@@ -28,7 +28,7 @@ const HowToBuy = () => {
             <div className='mt-[1rem]'>
                 <FollowUs/>
             </div>
-        </div>
+        </main>
     )
 }
 
