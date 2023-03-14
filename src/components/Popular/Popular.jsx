@@ -19,8 +19,8 @@ const Popular = () => {
             <div className='flex flex-wrap w-full gap-8 lg:flex-nowrap'>
                 {
                     popularItems.length > 0 ?
-                        popularItems.map((item, index) => {
-                            return <ProductCard key={index} name={item.name} image={item.image} price={item.price} priceType={item.priceType} colors={item.colors} />
+                        popularItems.map((item) => {
+                            return <ProductCard key={item.id} id={item.id} name={item.name} image={item.image} price={item.price} priceType={item.priceType} colors={item.colors} />
                         })
                     :
                         <h3 className='text-xl font-principal'>No hay productos populares en este momento</h3>
