@@ -1,37 +1,54 @@
-import NavBuy from "./NavBuy/NavBuy"
-import { useParams } from "react-router"
+import { BsCartCheck } from 'react-icons/bs'
+import { GoCreditCard } from 'react-icons/go'
+import { GiHanger } from 'react-icons/gi'
+import { FaShippingFast } from 'react-icons/fa'
 import HowToBuyQuestions from "./HowToBuyQuestions/HowToBuyQuestions"
 import Shipping from './Shipping/Shipping'
 import PaymentMethods from './PaymentMethods/PaymentMethods'
 import ChangesReturns from './ChangesReturns/ChangesReturns'
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import Doubts from './Doubts/Doubts'
+import FollowUs from '../../FollowUs/FollowUs'
 
 const HowToBuy = () => {
 
-    let { questions } = useParams
-
-    const [changeQuestions, setChangeQuestions] = useState()
-
-    useEffect (() => {
-
-        if (!changeQuestions) {
-            return (
-                setChangeQuestions(<HowToBuy/>)
-            )
-        }
-
-    }, [questions])
-
+    const [active, setActive] = useState("Primero")
 
     return (
         <div className='flex flex-col'>
             <div className='flex justify-center my-10'>
-                <NavBuy/>
+                <div className='cursor-pointer mx-9 flex flex-col items-center font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal' 
+                onClick={() => setActive("Primero")}>
+                    <BsCartCheck className='h-[3rem] w-[3rem]'/>
+                    <p className='mt-4'>Cómo comprar</p>
+                </div>
+                <div className='cursor-pointer mx-9 flex flex-col items-center font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal'
+                onClick={() => setActive("Segundo")}>
+                    <GoCreditCard className='h-[3rem] w-[3rem]'/>
+                    <p className='mt-4'>Métodos de pago</p>
+                </div>
+                <div className='cursor-pointer mx-9 flex flex-col items-center font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal'
+                onClick={() => setActive("Tercero")}>
+                    <GiHanger className='h-[3rem] w-[3rem]'/>
+                    <p className='mt-4'>Cambios y devoluciones</p> 
+                </div>
+                <div className='cursor-pointer mx-9 flex flex-col items-center font-bold hover:underline underline-offset-4 transition-all ease-in-out font-principal'
+                onClick={() => setActive("Cuarto")}>
+                    <FaShippingFast className='h-[3rem] w-[3rem]'/>
+                    <p className='mt-4'>Envíos</p>
+                </div>
             </div>
             <div className='flex justify-center my-10'>
-                {
-                  
-                }
+                  {active === 'Primero' && <HowToBuyQuestions />}
+                  {active === 'Segundo' && <PaymentMethods />}
+                  {active === 'Tercero' && <ChangesReturns />}
+                  {active === 'Cuarto' && <Shipping />}
+            </div>
+            <div className='my-[4rem]'>
+                <Doubts/>
+            </div>
+            <div className='mt-[1rem]'>
+                <FollowUs/>
             </div>
         </div>
     )
