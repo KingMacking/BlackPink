@@ -50,7 +50,7 @@ const Products = () => {
     }, [order])
 
     return (
-        <main className={`h-auto px-16 ${scrollPosition > 0 && "mt-32"}`}>
+        <main className={`h-auto px-16 ${scrollPosition > 180 && "mt-32"}`}>
             <div className="relative flex items-center w-full my-16">
                 <FilterBySelection setOrder={setOrder} />
                 <h2 className="absolute text-4xl font-bold text-center -translate-x-1/2 font-principal left-1/2">{category ? category.charAt(0).toUpperCase() + category.slice(1) : "Todos"}</h2>

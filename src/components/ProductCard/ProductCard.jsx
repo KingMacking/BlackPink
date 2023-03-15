@@ -1,6 +1,8 @@
-const ProductCard = ({name, price, priceType, colors, image}) => {
+import { Link } from "react-router-dom"
+
+const ProductCard = ({name, price, priceType, colors, image, id}) => {
     return (
-        <div className="flex flex-col gap-4 flex-grow font-principal basis-[30%]">
+        <Link className="flex flex-col gap-4 flex-grow font-principal basis-[30%] hover:scale-105 transition-all ease-in-out" to={`/detail/${id}`} preventScrollReset={false}>
             <div>
                 <img className="w-full" src={image}></img>
             </div>
@@ -15,7 +17,7 @@ const ProductCard = ({name, price, priceType, colors, image}) => {
                     })}
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 export default ProductCard

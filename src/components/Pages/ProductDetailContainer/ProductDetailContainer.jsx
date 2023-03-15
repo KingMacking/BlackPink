@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import ProductDetail from '../../ProductDetail/ProductDetail'
 import useScroll from "../../../hooks/useScroll"
 import Popular from "../../Popular/Popular"
+import FollowUs from "../../FollowUs/FollowUs"
 
 const ProductDetailContainer = () => {
     const scrollPosition = useScroll()
@@ -18,13 +19,14 @@ const ProductDetailContainer = () => {
     }, [productId])
 
     return (
-        <main className={`h-auto px-16 ${scrollPosition > 0 && "mt-32"}`}>
+        <main className={`h-auto ${scrollPosition > 180 ? "mt-48" : "mt-16"}`}>
             {
                 !productInfo ? <h2>No existe el producto</h2> :
                 
                 <ProductDetail product={productInfo}/>
             }
             <Popular/>
+            <FollowUs />
         </main>
     )
 }
