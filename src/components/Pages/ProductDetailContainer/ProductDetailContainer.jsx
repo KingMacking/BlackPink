@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
-import ProductDetail from '../ProductDetail/ProductDetail'
+import ProductDetail from '../../ProductDetail/ProductDetail'
 import useScroll from "../../../hooks/useScroll"
 import Popular from "../../Popular/Popular"
 
