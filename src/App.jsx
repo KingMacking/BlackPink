@@ -7,6 +7,7 @@ import HowToBuy from "./components/Pages/HowToBuy/HowToBuy";
 import Products from "./components/Pages/Products/Products";
 import ProductDetailContainer from "./components/Pages/ProductDetailContainer/ProductDetailContainer";
 import { useEffect } from "react";
+import MixMatch from "./components/Pages/MixMatch/MixMatch";
 
 function App() {
     const location = useLocation()
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/products" element={<Products />} />
                 <Route path="/products/:productsCategory" element={<Products />} />
                 <Route path="/detail/:productId" element={<ProductDetailContainer/>}/>
+                <Route path="/mixmatch/:productsMix" element={<MixMatch />} />
             </Routes>
             <Footer/>
         </>
