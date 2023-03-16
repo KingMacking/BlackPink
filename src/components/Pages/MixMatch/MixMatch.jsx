@@ -21,13 +21,13 @@ const MixMatch = () => {
     }, [])
 
     return (
-        <main className={`h-auto ${scrollPosition > 180 && "mt-32"} bg-pinkWhite px-16`}>
-            <div className='flex justify-around'>
-                <div className='sticky flex flex-col items-center h-full gap-8 mt-16 top-48 grow'>
+        <main className={`h-auto ${scrollPosition > 180 && "mt-32"} bg-pinkWhite md:px-16`}>
+            <div className='flex flex-col lg:justify-between lg:gap-16 lg:flex-row'>
+                <div className='flex flex-col items-center h-full gap-8 mt-16 lg:sticky top-48'>
                     <h2 className='flex items-center gap-4 text-4xl font-medium font-principal'>Mix&Match <span className='text-pinkCta'><Icon icon="mdi:star-four-points-outline" inline={true}/></span></h2>
                     <img className='w-fit h-fit' src={mixMatchImage} />
                 </div>
-                <div className='flex flex-col items-center gap-16 py-16 mt-16 bg-white rounded-3xl grow basis-1/2'>
+                <div className='flex flex-col items-center w-full gap-16 py-16 mt-16 bg-white rounded-3xl'>
                     {
                         products?.map(product => {
                             return <ProductDetail product={product}/>
