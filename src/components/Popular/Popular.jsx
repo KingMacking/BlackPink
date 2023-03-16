@@ -25,7 +25,7 @@ const Popular = () => {
                     popularItems?.length > 0 ?
                         popularItems?.map((item) => {
                             return (
-                                <SwiperSlide key={item.id} className="flex items-center justify-center md:grow md:basis-1/2 xl:basis-1/3">
+                                <SwiperSlide key={item.id} className="flex items-center justify-center px-4 md:px-0 md:grow md:basis-1/2 xl:basis-1/3">
                                     <ProductCard  id={item.id} name={item.name} image={item.image} price={item.price} priceType={item.priceType} colors={item.colors} />
                                 </SwiperSlide>
                             )

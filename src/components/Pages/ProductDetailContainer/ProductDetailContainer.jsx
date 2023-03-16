@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import ProductDetail from '../../ProductDetail/ProductDetail'
 import useScroll from "../../../hooks/useScroll"
 import Popular from "../../Popular/Popular"
-import FollowUs from "../../FollowUs/FollowUs"
+import fetchProducts from "../../utils/fetchProducts"
 
 const ProductDetailContainer = () => {
     const scrollPosition = useScroll()
@@ -11,11 +11,11 @@ const ProductDetailContainer = () => {
     const [productInfo, setProductInfo] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:5173/data/products.json")
-        .then(res => res.json())
-        .then(data => {
+        const fetchData = async () => {
+            const data = await fetchProducts("/data/products.json")
             setProductInfo(data.find(product => product.id === parseInt(productId)))
-        })
+        }
+        fetchData()
     }, [productId])
 
     return (

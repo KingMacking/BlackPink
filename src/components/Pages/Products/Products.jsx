@@ -56,7 +56,7 @@ const Products = () => {
                 <FilterBySelection setOrder={setOrder} />
                 <h2 className="absolute text-4xl font-bold text-center -translate-x-1/2 font-principal left-1/2">{category ? category.charAt(0).toUpperCase() + category.slice(1) : "Todos"}</h2>
             </div>
-            <div className='flex flex-wrap justify-between gap-8 mb-32'>
+            <div className='flex flex-wrap justify-between gap-8 mb-32 gap-y-24'>
                 {!products ? <h2>Loading</h2> :
                     products.map((product, index) => {
                         return <ProductCard key={index} name={product.name} image={product.image} price={product.price} priceType={product.priceType} colors={product.colors} />
