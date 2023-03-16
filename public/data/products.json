@@ -13,7 +13,7 @@
         "colors": ["#333333", "#666666", "#999999"]
     },
     {
-        "name": "Leather Jacket",
+        "name": "Leather Jacket With Black Details",
         "id": 2,
         "price": 149.99,
         "priceType": "Mayorista",
@@ -23,7 +23,7 @@
         "popular": true,
         "sizes": ["M","L","XL"],
         "description": "Tela de algodon",
-        "colors": ["#663300", "#996633", "#CC9966", "#FFCC99"]
+        "colors": ["#663300", "#996633", "#CC9966", "#FFCC99", "#171717"]
     },
     {
         "name": "Puffer Coat",

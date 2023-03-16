@@ -3,7 +3,7 @@ import newHome2 from '../../../../assets/image/newHome2.png'
 
 const NewCollections = () => {
     return (
-        <section className="flex flex-wrap px-16 mb-32 gap-y-16 justify-evenly">
+        <section className="flex flex-wrap px-4 py-32 md:px-16 gap-y-16 justify-evenly">
             <article className='relative'>
                 <img src={newHome2}/>
                 <div className='absolute flex flex-col bottom-10 left-8'>
