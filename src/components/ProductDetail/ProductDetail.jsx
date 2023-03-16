@@ -1,4 +1,3 @@
-
 const ProductDetail = ({product}) => {
     return (
         <div className="flex w-full gap-8 px-16 mb-32">
