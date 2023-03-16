@@ -1,10 +1,10 @@
 const ProductDetail = ({product}) => {
     return (
-        <div className="flex w-full gap-8 px-16">
-            <div className="w-1/2">
+        <div className="flex flex-col w-full gap-8 px-4 md:px-16 xl:flex-row">
+            <div className="w-full xl:w-2/3">
                 <img className="w-full" src={product.image} alt={product.name} />
             </div>
-            <div className="flex flex-col w-1/3 gap-6 font-principal">
+            <div className="flex flex-col w-full gap-6 xl:w-1/3 font-principal">
                 <div className="flex flex-col gap-2">
                     <h3 className="text-xl">{product.name}</h3>
                     <p className="text-3xl font-bold">${product.price}</p>
