@@ -5,7 +5,10 @@ module.exports = {
         extend: {},
         colors: {
             white: "#FCFCFC",
-            black: "#1A1A1A"
+            black: "#1A1A1A",
+            pinkWhite: '#FEE1E4',
+            pinkCta: '#DD5491',
+            pinkLogo: '#F598AF'
         },
         fontFamily: {
             principal: ["Poppins", "sans-serif"]
