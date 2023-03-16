@@ -3,6 +3,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import ProductCard from '../ProductCard/ProductCard'
 import fetchProducts from '../utils/fetchProducts'
+import arrowRight from '../../assets/svg/arrowRight.svg'
 
 
 const Popular = () => {
@@ -18,7 +19,7 @@ const Popular = () => {
 
     return (
         <section className='flex flex-col px-4 mb-32 md:px-16'>
-            <h3 className="mb-16 text-4xl font-bold text-black font-principal">Populares</h3>
+            <h3 className="flex items-center gap-8 mb-16 text-4xl font-bold text-black font-principal">Populares <span><img src={arrowRight} /></span> </h3>
             <Swiper className='flex justify-between w-full gap-16' slidesPerView={"auto"} autoplay={false} pagination={{clickable: true,}} navigation={true} modules={[Navigation, Autoplay]} >
                 {
                     popularItems?.length > 0 ?

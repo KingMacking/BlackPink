@@ -14,7 +14,7 @@ const HowToBuy = () => {
     const scrollPosition = useScroll()
 
     return (
-        <main className={`flex flex-col ${scrollPosition > 180 && "mt-32"}`}>
+        <main className={`flex flex-col ${scrollPosition > 180 && "mt-32"} bg-white`}>
             <div>
                 <NavBuy setActive={setActive} active={active}/>
             </div>

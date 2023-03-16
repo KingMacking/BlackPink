@@ -8,11 +8,10 @@ const Navbar = () => {
     const scrollPosition = useScroll()
     const [isOpen, setIsOpen] = useState(false)
     const location = useLocation()
-    console.log(location);
 
     return (
         <>
-            <div className={`z-50 flex p-6 ${location.pathname === "/" && "fixed top-0 bg-transparent"} ${scrollPosition > 180 ? `justify-between items-center px-20 lg:px-16 bg-white sticky top-0` : `lg:flex-col gap-4 px-20 lg:px-0  justify-between lg:justify-start items-center`} transition-all ease-in-out w-full duration-500`}>
+            <div className={`z-50 flex p-6 ${scrollPosition > 180 ? `justify-between items-center px-20 lg:px-16 bg-white sticky top-0` : `lg:flex-col gap-4 px-20 lg:px-0  justify-between lg:justify-start items-center`} ${location.pathname === "/" && "fixed top-0 bg-transparent"} transition-all ease-in-out w-full duration-500`}>
                 <Link className='flex flex-col gap-2' to="/">
                     <img src={blackPinkLogo} className="w-full"/>
                     <p className='italic font-principal'>Compra mínima 10.000 pesos</p>
