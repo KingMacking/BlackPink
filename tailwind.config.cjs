@@ -6,7 +6,9 @@ module.exports = {
         colors: {
             white: "#FCFCFC",
             black: "#1A1A1A",
-            whitepink: "#FEE1E4",
+            pinkWhite: '#FEE1E4',
+            pinkCta: '#DD5491',
+            pinkLogo: '#F598AF',
             transparent: "transparent",
         },
         fontFamily: {
