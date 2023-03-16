@@ -12,7 +12,7 @@ const ProductCard = ({name, price, priceType, colors, image, id}) => {
             <div className="flex justify-between w-full gap-1 lg:gap-4">
                 <div className="flex flex-col gap-2 w-36 sm:w-60 md:w-36 lg:w-60">
                     <h3 className="text-sm truncate lg:text-xl group-hover:underline underline-offset-2">{name}</h3>
-                    <p className="flex text-[12px] lg:text-xl items-center gap-4">${price}<span className="px-4 text-white bg-black rounded-full">{priceType}</span></p>
+                    <p className="flex text-[12px] lg:text-xl items-center gap-4">${price}<span className="px-4 text-white bg-pinkLogo rounded-full">{priceType}</span></p>
                 </div>
                 <div className="flex flex-wrap justify-end w-24 gap-x-2 lg:w-28 lgap-y-2">
                     {colors.map((color) => {

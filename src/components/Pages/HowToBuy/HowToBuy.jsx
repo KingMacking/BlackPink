@@ -18,16 +18,16 @@ const HowToBuy = () => {
             <div>
                 <NavBuy setActive={setActive} active={active}/>
             </div>
-            <div className='flex justify-center my-10'>
+            <div className='flex justify-center bg-pinkWhite pt-16'>
                 {active === 'howToBuy' && <HowToBuyQuestions />}
                 {active === 'paymentMethods' && <PaymentMethods />}
                 {active === 'changeReturns' && <ChangesReturns />}
                 {active === 'shipping' && <Shipping />}
             </div>
-            <div className='my-16'>
+            <div className='bg-pinkWhite'>
                 <Doubts/>
             </div>
-            <div className='mt-4'>
+            <div>
                 <FollowUs/>
             </div>
         </main>

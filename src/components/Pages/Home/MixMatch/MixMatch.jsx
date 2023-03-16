@@ -4,7 +4,7 @@ import mixMatchImage from '../../../../assets/image/mixmatch.png'
 
 const MixMatch = () => {
     return (
-        <div className="flex flex-col px-4 py-32 md:px-16 font-principal bg-pinkWhite">
+        <div className="flex flex-col px-4 py-32 md:px-16 font-principal bg-pinkWhite lg:mt-32 mt-20">
             <h3 className="flex gap-8 mb-8 text-4xl font-medium text-black">Mix&Match<span className='text-pinkCta'><Icon icon="mdi:star-four-points-outline" inline={true}/></span></h3>
             <p className='mb-10 text-xl text-black'>Elegí tu outfit favorito y te ayudamos a tenerlo</p>
             <div className='flex flex-wrap w-full gap-8 lg:flex-nowrap'>
