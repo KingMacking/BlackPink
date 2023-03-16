@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const ProductCard = ({name, price, priceType, colors, image, id}) => {
+    const location = useLocation()
+    console.log(location.pathname.split("/"));
+
     return (
-        <Link className="flex flex-col w-full gap-2 transition-all ease-in-out sm:w-3/4 group md:gap-4 font-principal lg:w-fit" to={`/detail/${id}`} preventScrollReset={false}>
+        <Link className={`flex flex-col w-full gap-2 transition-all ease-in-out sm:w-3/4 group md:gap-4 font-principal lg:w-fit ${location.pathname.split("/")[1] === "products" && "grow basis-1/4"}`} to={`/detail/${id}`} preventScrollReset={false}>
             <div className="shadow-[0_5px_5px_0_rgba(0,0,0,0.5)]">
                 <img className="w-full" src={image}></img>
             </div>

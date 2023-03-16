@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import useScroll from "../../../hooks/useScroll"
 import FollowUs from "../../FollowUs/FollowUs"
 import ProductCard from "../../ProductCard/ProductCard"
+import fetchProducts from "../../utils/fetchProducts"
 import FilterBySelection from "./FilterBySelection/FilterBySelection"
 
 const Products = () => {
@@ -13,15 +14,15 @@ const Products = () => {
     const {productsCategory} = useParams()
 
     useEffect(() => {
-        fetch("http://localhost:5173/data/products.json")
-        .then(res => res.json())
-        .then((data) => {
+        const fetchData = async () => {
+            const data = await fetchProducts("/data/products.json")
             if(productsCategory){
                 setProducts(data.filter(product => product.category === productsCategory))
             } else {
                 setProducts(data)
             }
-        })
+        }
+        fetchData()
     }, [productsCategory])
 
     useEffect(() => {
@@ -50,12 +51,12 @@ const Products = () => {
     }, [order])
 
     return (
-        <main className={`h-auto px-16 ${scrollPosition > 180 && "mt-32"}`}>
+        <main className={`h-auto px-8 md:px-32 ${scrollPosition > 180 && "mt-32"}`}>
             <div className="relative flex items-center w-full my-16">
                 <FilterBySelection setOrder={setOrder} />
                 <h2 className="absolute text-4xl font-bold text-center -translate-x-1/2 font-principal left-1/2">{category ? category.charAt(0).toUpperCase() + category.slice(1) : "Todos"}</h2>
             </div>
-            <div className='flex flex-wrap gap-8 mb-32'>
+            <div className='flex flex-wrap justify-between gap-8 mb-32'>
                 {!products ? <h2>Loading</h2> :
                     products.map((product, index) => {
                         return <ProductCard key={index} name={product.name} image={product.image} price={product.price} priceType={product.priceType} colors={product.colors} />
