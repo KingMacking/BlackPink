@@ -20,7 +20,7 @@ const Navbar = () => {
                 </Link>
                 <nav className='items-center hidden gap-16 p-2 lg:flex'>
                     <div className="font-bold flex gap-4 transition-all ease-in-out hover:underline hover:text-pinkLogo hover:cursor-pointer underline-offset-4 font-principal group relative">
-                        <span className=''>Catálogo</span>
+                        Catálogo
                         <Icon className='-rotate-90 group-hover:rotate-90 group-hover:mt-2 transition-all ease-in-out duration-200' icon="material-symbols:arrow-back-ios-rounded" inline={true} />
                         <div className='group-hover:md:block hover:md:block hidden absolute font-principal top-4 h-auto z-50'>
                             <div className='py-3'>
