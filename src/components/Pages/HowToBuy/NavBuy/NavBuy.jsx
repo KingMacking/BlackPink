@@ -6,7 +6,7 @@ import { FaShippingFast } from 'react-icons/fa'
 const NavBuy = ({setActive, active}) => {
     
     return(
-        <div className='flex justify-center lg:mt-10 px-4 mt-5'>
+        <div className='flex justify-center px-4 pt-5 lg:pt-10'>
             <div className={`flex flex-col items-center font-bold transition-all ease-in-out cursor-pointer p-1 mx-1  lg:mx-9 hover:underline hover:text-pinkCta underline-offset-4 font-principal ${active === "howToBuy" && "underline text-pinkCta"}`}
             onClick={() => setActive('howToBuy')}>
                 <BsCartCheck className='lg:text-[4rem] text-[2rem]'/>

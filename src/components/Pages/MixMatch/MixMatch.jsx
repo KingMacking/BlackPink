@@ -30,7 +30,7 @@ const MixMatch = () => {
             <div className='flex flex-col lg:justify-between lg:gap-16 lg:flex-row'>
                 <div className='flex flex-col items-center h-full gap-8 mt-16 lg:sticky top-48'>
                     <h2 className='flex items-center gap-4 text-4xl font-medium font-principal'>Mix&Match <span className='text-pinkCta'><Icon icon="mdi:star-four-points-outline" inline={true}/></span></h2>
-                    <img className='w-fit h-fit' src={mixMatchImages[parseInt(productsMix) - 1]} />
+                    <img className='w-3/5 h-fit' src={mixMatchImages[parseInt(productsMix) - 1]} />
                 </div>
                 <div className='flex flex-col items-center w-full gap-16 py-16 mt-16 bg-white rounded-3xl'>
                     {
