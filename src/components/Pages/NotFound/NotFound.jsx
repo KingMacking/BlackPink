@@ -11,11 +11,11 @@ const NotFound = () => {
     ]
     return (
         <main className={`h-auto ${scrollPosition > 180 && "mt-32"} bg-white overflow-hidden`}>
-            <section className="flex md:flex-row flex-col font-principal font-medium px-8 md:px-16 w-full mx-auto justify-center mb-16">
+            <section className="flex flex-col justify-center w-full px-8 mx-auto mb-16 font-medium md:flex-row font-principal md:px-16">
                 <div>
                     <img src={badGatewayImage} />
                 </div>
-                <div className='flex flex-col gap-4 justify-end mb-5'>
+                <div className='flex flex-col justify-end gap-4 mb-5'>
                     <h1 className='text-4xl'>¡Ay, no!</h1>
                     <div className='text-xl'>
                         <p>No encontramos la página que estás buscando.</p>
@@ -24,9 +24,9 @@ const NotFound = () => {
                     <p className='text-xl'>Quizás alguno de estos links ayude:</p>
                 </div>
             </section>
-            <section className='flex justify-center lg:flex-row flex-col flex-wrap gap-8 w-full px-8 md:px-0 md:w-1/2 mx-auto mb-16'>
+            <section className='flex flex-col flex-wrap justify-center w-full gap-8 px-8 mx-auto mb-16 lg:flex-row md:px-0 md:w-1/2'>
                 {links.map(link => {
-                    return <Link key={link.url} className='bg-pinkCta rounded-full md:grow md:basis-1/3 py-4 text-white text-center font-bold hover:scale-105 hover:bg-pinkWhite hover:text-pinkCta transition-all ease-in-out duration-200' to={link.url} target={link.target ? link.target : "_self"}>{link.name}</Link>
+                    return <Link key={link.url} className='py-4 font-bold text-center text-white transition-all duration-200 ease-in-out rounded-full bg-pinkCta md:grow md:basis-1/3 hover:scale-105 hover:bg-pinkWhite hover:text-pinkCta' to={link.url} target={link.target ? link.target : "_self"}>{link.name}</Link>
                 })}
             </section>
         </main>
