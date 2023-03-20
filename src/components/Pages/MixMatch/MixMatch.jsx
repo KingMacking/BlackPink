@@ -28,7 +28,7 @@ const MixMatch = () => {
     return (
         <main className={`h-auto ${scrollPosition > 180 && "mt-32"} bg-pinkWhite md:px-16`}>
             <div className='flex flex-col lg:justify-between lg:gap-16 lg:flex-row'>
-                <div className='flex flex-col items-center h-full gap-8 mt-16 lg:sticky top-36'>
+                <div className='flex flex-col items-center h-full gap-3 mt-16 lg:sticky top-36'>
                     <h2 className='flex items-center gap-4 text-4xl font-medium font-principal'>Mix&Match <span className='text-pinkCta'><Icon icon="mdi:star-four-points-outline" inline={true}/></span></h2>
                     <img className='w-3/5 h-fit' src={mixMatchImages[parseInt(productsMix) - 1]} />
                 </div>
