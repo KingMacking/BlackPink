@@ -55,7 +55,7 @@ const Products = () => {
                 <h2 className="w-full text-4xl font-bold text-center md:w-fit md:-translate-x-1/2 md:absolute font-principal md:left-1/2">{category ? category.charAt(0).toUpperCase() + category.slice(1) : "Todos"}</h2>
                 <FilterBySelection setOrder={setOrder} />
             </div>
-            <div className='flex flex-wrap justify-between gap-8 mb-32 gap-y-24'>
+            <div className='flex flex-wrap justify-between gap-6 mb-32 lg:gap-4 gap-y-24'>
                 {!products ? <h2>Loading</h2> :
                     products.map((product, index) => {
                         return <ProductCard key={index} id={product.id} name={product.name} image={product.image} price={product.price} priceType={product.priceType} colors={product.colors} />
