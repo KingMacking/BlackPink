@@ -33,9 +33,9 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <NavLink className={({isActive}) => ["font-bold transition-all ease-in-out hover:underline hover:decoration-pinkLogo hover:text-pinkLogo underline-offset-4 font-principal", isActive && "hover:underline text-pinkLogo rounded-3xl bg-pinkWhite bg-opacity-20 p-2"].join(" ")} to="/howtobuy">Cómo comprar</NavLink>
-                    <NavLink className={({isActive}) => ["font-bold transition-all ease-in-out hover:underline hover:decoration-pinkLogo hover:text-pinkLogo underline-offset-4 font-principal", isActive && "hover:underline text-pinkLogo rounded-3xl bg-pinkWhite bg-opacity-20 p-2"].join(" ")} to="/aboutus">Sobre nosotros</NavLink>
-                    <NavLink className={({isActive}) => ["font-bold transition-all ease-in-out hover:underline hover:decoration-pinkLogo hover:text-pinkLogo underline-offset-4 font-principal", isActive && "hover:underline text-pinkLogo rounded-3xl bg-pinkWhite bg-opacity-20 p-2"].join(" ")} to="/contact">Contacto</NavLink>
+                    <NavLink className={({isActive}) => ["font-bold transition-all ease-in-out hover:underline hover:decoration-pinkLogo hover:text-pinkLogo underline-offset-4 font-principal", isActive && "hover:underline text-pinkLogo rounded-full bg-pinkWhite bg-opacity-20 p-2"].join(" ")} to="/howtobuy">Cómo comprar</NavLink>
+                    <NavLink className={({isActive}) => ["font-bold transition-all ease-in-out hover:underline hover:decoration-pinkLogo hover:text-pinkLogo underline-offset-4 font-principal", isActive && "hover:underline text-pinkLogo rounded-full bg-pinkWhite bg-opacity-20 p-2"].join(" ")} to="/aboutus">Sobre nosotros</NavLink>
+                    <NavLink className={({isActive}) => ["font-bold transition-all ease-in-out hover:underline hover:decoration-pinkLogo hover:text-pinkLogo underline-offset-4 font-principal", isActive && "hover:underline text-pinkLogo rounded-full bg-pinkWhite bg-opacity-20 p-2"].join(" ")} to="/contact">Contacto</NavLink>
                 </nav>
 
                 {isOpen ? <RxCross2 className='text-4xl lg:hidden text-pinkLogo absolute right-4' onClick={() => setIsOpen(false)}/> : <RxHamburgerMenu className='text-4xl lg:hidden text-pinkLogo absolute right-4' onClick={() => setIsOpen(true)}/>}
