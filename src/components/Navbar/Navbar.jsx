@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className={`z-50 flex px-4 py-6 lg:p-6 ${scrollPosition > 180 ? `lg:justify-between items-center px-20 lg:px-16 bg-white sticky top-0` : `lg:flex-col gap-4 px-20 lg:px-0  justify-center lg:justify-start items-center`} ${location.pathname === "/" && "md:fixed top-0 bg-transparent"} transition-all ease-in-out w-full duration-500`}>
+            <div className={`z-50 flex px-4 py-6 lg:p-6 ${scrollPosition > 180 ? `justify-center lg:justify-between items-center px-20 lg:px-16 bg-white sticky top-0` : `lg:flex-col gap-4 px-20 lg:px-0  justify-center lg:justify-start items-center`} ${location.pathname === "/" && "md:fixed top-0 bg-transparent"} transition-all ease-in-out w-full duration-500`}>
                 <Link className='flex flex-col gap-2 justify-self-center lg:justify-self-start' to="/">
                     <img src={blackPinkLogo} className="w-full"/>
                     <p className='italic font-principal text-sm md:text-base'>Compra mínima 10.000 pesos</p>
@@ -22,14 +22,14 @@ const Navbar = () => {
                     <div className="font-bold flex gap-4 transition-all ease-in-out hover:underline hover:cursor-pointer underline-offset-4 font-principal group relative">
                         Catálogo
                         <Icon className='-rotate-90 group-hover:rotate-90 group-hover:mt-2 transition-all ease-in-out duration-200' icon="material-symbols:arrow-back-ios-rounded" inline={true} />
-                        <div className='group-hover:md:block hover:md:block hidden absolute font-principal top-4'>
+                        <div className='group-hover:md:block hover:md:block hidden absolute font-principal top-4 h-auto z-50'>
                             <div className='py-3'>
                                 <div className='w-4 h-4 left-4 absolute mt-1 bg-white rotate-45'></div>
                             </div>
-                            <div className='flex flex-col gap-4 bg-white p-3 w-32 rounded-md shadow-lg'>
+                            <div className='flex flex-col gap-4 bg-white p-3 w-32 rounded-md shadow-lg h-auto'>
                                 <Link className='hover:underline underline-offset-2 font-normal' to="/products">Ver todo</Link>
-                                <Link className='hover:underline underline-offset-2 font-normal' to="/abrigos">Abrigos</Link>
-                                <Link className='hover:underline underline-offset-2 font-normal' to="/polleras">Polleras</Link>
+                                <Link className='hover:underline underline-offset-2 font-normal' to="/products/abrigos">Abrigos</Link>
+                                <Link className='hover:underline underline-offset-2 font-normal' to="/products/polleras">Polleras</Link>
                             </div>
                         </div>
                     </div>
@@ -40,15 +40,15 @@ const Navbar = () => {
 
                 {isOpen ? <RxCross2 className='text-4xl lg:hidden text-pinkLogo absolute right-4' onClick={() => setIsOpen(false)}/> : <RxHamburgerMenu className='text-4xl lg:hidden text-pinkLogo absolute right-4' onClick={() => setIsOpen(true)}/>}
 
-                <nav className={`fixed flex w-full flex-col items-center mt-[7.5rem] top-0 z-50 lg:hidden overflow-y-auto bottom-0 gap-4 py-4 px-8 bg-white border-t border-pinkCta duration-200 ${isOpen ? "left-0" : "left-[-100%]"}`}>
+                <nav className={`fixed flex w-full flex-col items-center mt-[7.5rem] top-0 z-50 lg:hidden overflow-y-auto bottom-0 gap-2 py-4 px-8 bg-white border-t border-pinkCta duration-200 ${isOpen ? "left-0" : "left-[-100%]"}`}>
                     <button onClick={() => setCategoriesVisibility(!categoriesVisibility)} className={`flex items-center ${categoriesVisibility && "first:gap-2"} justify-between font-principal underline-offset-4 border-b border-b-lightGrey w-full py-2 last:border-b-0`}>
                         Catálogo
                         <Icon className={`${!categoriesVisibility && "-rotate-90"} transition-all ease-in-out duration-200 text-xl`} icon="material-symbols:arrow-back-ios-rounded" inline={true} />
                     </button>
-                    <div className={`${categoriesVisibility ? "flex" : "hidden"} flex-col w-full gap-4`}>
+                    <div className={`${categoriesVisibility ? "flex" : "hidden"} flex-col w-full gap-2 border-b border-b-lightGrey py-4`}>
                         <Link className='hover:underline underline-offset-2 font-normal' to="/products">Ver todo</Link>
-                        <Link className='hover:underline underline-offset-2 font-normal' to="/abrigos">Abrigos</Link>
-                        <Link className='hover:underline underline-offset-2 font-normal' to="/polleras">Polleras</Link>
+                        <Link className='hover:underline underline-offset-2 font-normal' to="/products/abrigos">Abrigos</Link>
+                        <Link className='hover:underline underline-offset-2 font-normal' to="/products/polleras">Polleras</Link>
                     </div>
                     <NavLink className={({isActive}) => ["font-principal underline-offset-4 border-b border-b-lightGrey w-full py-2 last:border-b-0", isActive && "underline"].join(" ")} to="/howtobuy">Cómo comprar</NavLink>
                     <NavLink className={({isActive}) => ["font-principal underline-offset-4 border-b border-b-lightGrey w-full py-2 last:border-b-0", isActive && "underline"].join(" ")} to="/aboutus">Sobre nosotros</NavLink>

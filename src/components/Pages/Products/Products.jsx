@@ -18,6 +18,7 @@ const Products = () => {
             const data = await fetchProducts("/data/products.json")
             if(productsCategory){
                 setProducts(data.filter(product => product.category === productsCategory))
+                setCategory(productsCategory)
             } else {
                 setProducts(data)
             }
@@ -30,13 +31,11 @@ const Products = () => {
             const alphabeticalOrderedProducts = products.sort((a, b) => {
                 const nameA = a.name.split(' ').join('').toLowerCase()
                 const nameB = b.name.split(' ').join('').toLowerCase()
-                console.log(nameA);
-                console.log(nameB);
-                    
-                // names must be equal
+
                 return nameA.localeCompare(nameB)
+
             }).map(product => product)
-            console.log(alphabeticalOrderedProducts);
+
             const priceOrderedProducts = products.sort((a, b) => a.price - b.price)
             if(order === "priceAsc") {
                 setProducts(priceOrderedProducts)
