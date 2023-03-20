@@ -12,7 +12,7 @@ import bannerBMobile from '../../../../assets/image/bannerB-mobile.png'
 
 const SwiperHome = () => {
     return (
-        <Swiper className="w-full" on effect={"fade"} autoplay={true} loop={true} modules={[EffectFade, Autoplay]}>
+        <Swiper className="w-full" effect="fade" autoplay={{delay: 3000, stopOnLastSlide: false, disableOnInteraction: false}} loop={true} loopedSlides={1} modules={[EffectFade, Autoplay]}>
             <SwiperSlide className="flex items-center justify-center w-full">
                 <img src={bannerW} className="w-full object-cover hidden md:block" />
                 <img src={bannerWMobile} className="w-full object-cover md:hidden" />
