@@ -1,29 +1,29 @@
 [
     {
-        "name": "Winter Coat",
+        "name": "Saco",
         "id": 1,
-        "price": 99.99,
+        "price": 2880,
         "priceType": "Mayorista",
-        "image": "https://imgur.com/1WQ8lxa.png",
+        "image": "/images/products/saco1.png",
         "mixGroup": [2, 3],
         "category": "abrigos",
-        "popular": false,
+        "popular": true,
         "sizes": ["M","L","XL"],
         "description": "Tela de algodon",
-        "colors": ["#333333", "#666666", "#999999"]
+        "colors": ["#BA6211", "#FED9B6", "#191919", "#1A7404"]
     },
     {
-        "name": "Leather Jacket With Black Details",
+        "name": "Sweater",
         "id": 2,
         "price": 149.99,
         "priceType": "Mayorista",
-        "image": "https://imgur.com/1WQ8lxa.png",
+        "image": "/images/products/sweater1.png",
         "mixGroup": [1, 2],
         "category": "abrigos",
         "popular": true,
         "sizes": ["M","L","XL"],
         "description": "Tela de algodon",
-        "colors": ["#663300", "#996633", "#CC9966", "#FFCC99", "#171717"]
+        "colors": ["#1A1A1A", "#1A7404", "#FED9B6", "#BA6211", "#F598AF"]
     },
     {
         "name": "Puffer Coat",
