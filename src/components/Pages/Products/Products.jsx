@@ -52,7 +52,7 @@ const Products = () => {
     return (
         <main className={`h-auto px-8 md:px-32 ${scrollPosition > 180 && "mt-32"}`}>
             <div className="relative flex flex-col items-center w-full my-16 md:flex-row gap-y-4">
-                <h2 className="w-full text-4xl font-bold text-center md:-translate-x-1/2 md:absolute font-principal md:left-1/2">{category ? category.charAt(0).toUpperCase() + category.slice(1) : "Todos"}</h2>
+                <h2 className="w-full text-4xl font-bold text-center md:w-fit md:-translate-x-1/2 md:absolute font-principal md:left-1/2">{category ? category.charAt(0).toUpperCase() + category.slice(1) : "Todos"}</h2>
                 <FilterBySelection setOrder={setOrder} />
             </div>
             <div className='flex flex-wrap justify-between gap-8 mb-32 gap-y-24'>
