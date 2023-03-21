@@ -27,7 +27,7 @@ const ProductDetailContainer = () => {
                 <ProductDetail product={productInfo}/>
             }
                 <div className="py-16">
-                    <Popular/>
+                    <Popular />
                 </div>         
             </div>
         </main>

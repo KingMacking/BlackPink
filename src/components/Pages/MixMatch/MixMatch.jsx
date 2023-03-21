@@ -9,11 +9,13 @@ import fetchProducts from '../../utils/fetchProducts'
 import mixMatchCool from '../../../assets/image/mixmatchCool.png'
 import mixMatchPreppy from '../../../assets/image/mixmatchPreppy.png'
 import mixMatchCute from '../../../assets/image/mixmatchCute.png'
+import Modal from '../../Modal/Modal'
 
 const mixMatchImages = [mixMatchCool, mixMatchPreppy, mixMatchCute]
 
 const MixMatch = () => {
     const [products, setProducts] = useState()
+    const [isBuying, setIsBuying] = useState(false)
     const {productsMix} = useParams()
     const scrollPosition = useScroll()
 
@@ -34,13 +36,14 @@ const MixMatch = () => {
                 </div>
                 <div className='flex flex-col items-center w-full gap-16 py-16 mt-16 bg-white rounded-3xl'>
                     {
-                        products?.map(product => {
-                            return <ProductDetail product={product}/>
+                        products?.map((product, index) => {
+                            return <ProductDetail key={index} product={product}/>
                         })
                     }
-                    <a className='w-1/2 py-4 text-2xl text-center text-white transition-all ease-in-out rounded-full bg-pinkCta hover:scale-105 hover:cursor-pointer font-principal'>Comprar todo</a>
+                    <a onClick={() => setIsBuying(true)} className='w-1/2 py-4 text-2xl text-center text-white transition-all ease-in-out rounded-full bg-pinkCta hover:scale-105 hover:cursor-pointer font-principal' href={`https://wa.me/5493518557030?text=Hola!%20Me%20interesan%20los%20productos%20del%20conjunto%20mixmatch%20${parseInt(productsMix)}`} target="_blank">Comprar todo</a>
                 </div>
             </div>
+            <Modal show={isBuying} onClose={() => setIsBuying(false)} />
             <FollowUs />
         </main>
     )

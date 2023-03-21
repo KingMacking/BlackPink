@@ -1,4 +1,9 @@
+import { useState } from "react"
+import Modal from "../Modal/Modal"
+
 const ProductDetail = ({product}) => {
+    const [isBuying, setIsBuyign] = useState(false)
+
     return (
         <div className="flex flex-col w-full gap-8 px-4 md:px-16 xl:flex-row">
             <div className="w-full xl:w-2/3">
@@ -27,13 +32,14 @@ const ProductDetail = ({product}) => {
                     </div>
                 </div>
 
-                <a className="px-10 py-4 text-center text-white rounded-full bg-pinkCta" href="">Comprar</a>
+                <a onClick={() => setIsBuyign(true)} className="px-10 py-4 text-center text-white rounded-full bg-pinkCta hover:scale-105 transition-all ease-in-out" href={`https://wa.me/5493518557030?text=Hola!%20Me%20interesa%20el%20producto%20${product.name}`} target="_blank">Comprar</a>
 
                 <div>
                     <p className="mb-3 text-lg border-b-2 w-fit">Descripción</p>
                     <p className="text-sm">{product.description}</p>    
                 </div>
             </div>
+            <Modal show={isBuying} onClose={() => setIsBuyign(false)}/>
         </div>
     )
 }
