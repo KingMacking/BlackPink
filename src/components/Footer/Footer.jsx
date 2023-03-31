@@ -25,10 +25,10 @@ const Footer = () => {
             <div className="flex justify-start ml-12 text-white lg:ml-0">
                 <div className="flex flex-col items-start">
                 <h1 className="flex justify-start mt-5 text-xl font-bold lg:mt-0 lg:justify-start">Informacion</h1>
-                    <Link className="my-1 mt-4 lg:my-2 lg:mt-4 hover:underline underline-offset-4 text-pinkLogo" to={'/'}>Preguntas frecuentes</Link>
-                    <Link className="my-1 lg:my-2 hover:underline underline-offset-4 text-pinkLogo" to={'/'}>Métodos de pago</Link>
-                    <Link className="my-1 lg:my-2 hover:underline underline-offset-4 text-pinkLogo" to={'/'}>Envíos</Link>
-                    <Link className="my-1 lg:my-2 hover:underline underline-offset-4 text-pinkLogo" to={'/'}>Cambios y devoluciones</Link>
+                    <Link className="my-1 mt-4 lg:my-2 lg:mt-4 hover:underline underline-offset-4 text-pinkLogo" to={'/howtobuy'}>Preguntas frecuentes</Link>
+                    <Link className="my-1 lg:my-2 hover:underline underline-offset-4 text-pinkLogo" to={'/howtobuy'}>Métodos de pago</Link>
+                    <Link className="my-1 lg:my-2 hover:underline underline-offset-4 text-pinkLogo" to={'/howtobuy'}>Envíos</Link>
+                    <Link className="my-1 lg:my-2 hover:underline underline-offset-4 text-pinkLogo" to={'/howtobuy'}>Cambios y devoluciones</Link>
                 </div>
             </div>
         </div>

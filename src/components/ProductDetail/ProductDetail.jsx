@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import Modal from "../Modal/Modal"
 
 const ProductDetail = ({product}) => {
@@ -24,7 +25,7 @@ const ProductDetail = ({product}) => {
                     </div>
                 </div>
                 <div className="flex flex-col w-full gap-2">
-                    <p className="flex justify-between w-full text-lg">Talles<a href="" className="font-semibold text-md text-pinkCta hover:underline underline-offset-2">Ver tabla de talles</a></p>
+                    <p className="flex justify-between w-full text-lg">Talles<Link to="/sizestable" className="font-semibold text-md text-pinkCta hover:underline underline-offset-2">Ver tabla de talles</Link></p>
                     <div className="flex gap-2">
                         {product.sizes.map((size) => {
                             return <span key={size} className="w-10 h-10 px-3 py-2 font-bold text-center rounded-md text-pinkCta bg-pinkWhite">{size}</span>
