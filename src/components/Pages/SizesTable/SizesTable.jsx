@@ -16,7 +16,7 @@ const SizesTable = () => {
                 }
             </section>
             <footer className='bg-pinkWhite mb-32 flex justify-center'>
-                <p className='italic font-principal pb-16 px-16'>Las medidas pueden variar entre 1 y 2 centímetros, según la persona, y la metodología utilizada para medir</p>
+                <p className='italic font-principal pb-16 px-16'>Las medidas pueden variar entre 1 y 2 centímetros, según la persona y la metodología utilizada para medir.</p>
             </footer>
         </main>
     )

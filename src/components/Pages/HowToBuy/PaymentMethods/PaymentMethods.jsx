@@ -11,7 +11,7 @@ const PaymentMethods = () => {
                 </div>
                 <div className="lg:my-10 my-6 lg:px-0 px-10 flex flex-col items-center">
                     <h1 className="lg:text-2xl text-[1.2rem] font-bold font-principal pb-5">Minorista</h1>
-                    <p className="lg:text-xl text-[1rem] ">Efectivo, dpebito o crpedito (con un 10% de recargo).</p>
+                    <p className="lg:text-xl text-[1rem] ">Efectivo, debito o credito (con un 10% de recargo).</p>
                 </div>
             </div>
         </div>

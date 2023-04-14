@@ -9,7 +9,7 @@
         "category": "abrigos",
         "popular": true,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#1A1A1A", "#1A7404", "#FED9B6", "#BA6211", "#F598AF"]
     },
     {
@@ -22,7 +22,7 @@
         "category": "abrigos",
         "popular": true,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#BA6211", "#FED9B6", "#191919", "#1A7404"]
     },
     {
@@ -35,7 +35,7 @@
         "category": "abrigos",
         "popular": true,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#1A7404", "#E97408"]
     },
     {
@@ -48,7 +48,7 @@
         "category": "abrigos",
         "popular": false,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#252935", "#BA6211", "#CCAEBB", "#BF273C", "#E1E2D1"]
     },
     {
@@ -61,7 +61,7 @@
         "category": "abrigos",
         "popular": false,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#DD2666", "#E1222A", "#255DB4", "#FFFFFF", "#1A181B"]
     },
     {
@@ -74,7 +74,7 @@
         "category": "abrigos",
         "popular": false,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#32312F"]
     },
     {
@@ -87,7 +87,7 @@
         "category": "abrigos",
         "popular": false,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#FFFFFF", "#393635"]
     },
     {
@@ -100,7 +100,7 @@
         "category": "abrigos",
         "popular": true,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#C28AF9", "#F657A3", "#FA0817", "#FA0817", "#A5A5A5"]
     },
     {
@@ -113,7 +113,7 @@
         "category": "abrigos",
         "popular": false,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#A5A5A5", "#E1222A", "#255DB4", "#FFFFFF", "#11171F"]
     },
     {
@@ -126,7 +126,7 @@
         "category": "polleras",
         "popular": true,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#11171F"]
     },
     {
@@ -139,7 +139,7 @@
         "category": "polleras",
         "popular": false,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#D8B699", "#80888B", "#11171F"]
     },
     {
@@ -152,7 +152,7 @@
         "category": "polleras",
         "popular": true,
         "sizes": ["M","L","XL"],
-        "description": "Tela de algodon",
+        "description": "Tela de algodón",
         "colors": ["#24242E", "#E6E9EC"]
     }
 ]
